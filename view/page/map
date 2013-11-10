@@ -1,0 +1,34 @@
+<html>
+  <head>
+    <link rel="shortcut icon" href="/static/favicon.ico">
+    <title>Saskatchewan Points of Interest Using OpenStreetMap</title>
+  </head>
+  <body>
+    <div id="mapdiv"></div>
+    <script src="http://www.openlayers.org/api/OpenLayers.js"></script>
+    <script>
+<!--
+    map = new OpenLayers.Map("mapdiv");
+    map.addLayer(new OpenLayers.Layer.OSM());
+ 
+    var pois = new OpenLayers.Layer.Text( "My Points",
+                    { location: "/view/page/poi_opendata",
+                      projection: map.displayProjection
+                    });
+    map.addLayer(pois);
+ 
+ 
+ 
+    // Set start centrepoint and zoom    
+    var lonLat = new OpenLayers.LonLat( -104.076042099, 50.0603943223 )
+          .transform(
+            new OpenLayers.Projection("EPSG:4326"), // transform from WGS 1984
+            map.getProjectionObject() // to Spherical Mercator Projection
+          );
+    var zoom=9;
+    map.setCenter (lonLat, zoom);  
+-->
+  </script>
+    <hr />
+    <i><a href="http://www.openstreetmap.org/copyright">&copy; OpenStreetMap contributors</a></i>
+</body></html>
